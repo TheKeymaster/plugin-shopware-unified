@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../engine/Shopware/Components/Plugin/schema/config.xsd">
+
+    <elements>
+        <element type="text" required="true" scope="shop">
+            <name>ShopKey</name>
+            <label lang="de">Shopkey</label>
+            <label lang="en">Shopkey</label>
+            <value></value>
+            <description lang="de">FINDOLOGIC Shopkey</description>
+            <description lang="en">FINDOLOGIC Shopkey</description>
+        </element>
+        <element type="boolean" required="true" scope="shop">
+            <name>ActivateFindologic</name>
+            <label lang="de">Aktiv</label>
+            <label lang="en">Active</label>
+            <value>true</value>
+            <description lang="de">Aktiviert die FINDOLOGIC Suche.</description>
+            <description lang="en">Activate the FINDOLOGIC search provider.</description>
+        </element>
+        <element type="boolean" required="true" scope="shop">
+            <name>ActivateFindologicForCategoryPages</name>
+            <label lang="de">Aktiv auf Kategorieseiten</label>
+            <label lang="en">Active for category pages</label>
+            <value>true</value>
+            <description lang="de">Aktiviert die FINDOLOGIC Suche für Kategorieseiten.</description>
+            <description lang="en">Activate the FINDOLOGIC search provider for category pages.</description>
+        </element>
+        <element type="text" required="false" scope="shop">
+            <name>IntegrationType</name>
+            <label lang="de">Integration (schreibgeschützt)</label>
+            <label lang="en">Integration (read-only)</label>
+            <value></value>
+            <description lang="en">Currently used integration type. Either one of Direct Integration or API.</description>
+            <description lang="de">Die aktuell verwendete Integrationsart. Entweder Direct Integration oder API.</description>
+            <options>
+                <readOnly>true</readOnly>
+            </options>
+        </element>
+    </elements>
+
+</config>
